@@ -1,0 +1,62 @@
+// ***CUSTOMISATIONS TO BOOTSTRAP VARIABLES***
+
+// Change default font-family
+$font-family-sans-serif: d-din, Arial, sans-serif;
+
+// Make button text bold by default
+$btn-font-weight: 700;
+
+//Adjustments to colors
+$body-bg:                   black;
+$body-color:                #f8f9fa;
+$secondary:                 #adb5bd;
+$input-bg:                  black;
+
+// Remove focus borders and shadows from buttons and forms
+$btn-focus-width: 0;
+$input-focus-width: 0;
+$input-focus-box-shadow: none;
+$input-focus-border-color: #f8f9fa;
+
+// ***IMPORT BOOTSTRAP SCSS***
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+
+// ***EXTERNAL CSS***
+html, body {
+    height: 100%;
+}
+
+.navbar {
+    background-color: rgba(0,0,0,0);
+}
+  
+.nav-item {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 170%;
+}
+  
+.navbar-brand {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 280%;
+}
+
+.modal-content {
+    background-color: black;
+}
+
+#quotefooter {
+    font-size: 125%;
+}
+
+#connectImg {
+    background: url(../img/connect.jfif) no-repeat center center/cover;
+    min-height: 100vh;
+}
+
+#connectfooter {
+    background-color: $dark;
+}

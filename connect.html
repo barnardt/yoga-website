@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="scss/fonts.css">
+
+    <!-- (Customized) Bootstrap CSS -->
+    <link rel="stylesheet" href="scss/connect.css">
+  
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+      crossorigin="anonymous">
+
+    <!-- Title -->
+    <title>Yoga - connect</title>
+  </head>
+
+  <body>
+
+    <!-- Modal with "CONTACT US" form -->
+    <div class="modal" id="contactModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content border border-light">
+          <div class="modal-header">
+            <h5 class="modal-title">Contact us</h5>
+            <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="saveForm">
+            
+            <div class="form-group row">
+                <label for="saveTitle" class="col-sm-3 col-form-label">Email</label>
+                <div class="col-sm-9">
+                <input type="text" class="form-control text-light" id="saveTitle" placeholder="Your email address" value="">
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <label for="saveAuth" class="col-sm-3 col-form-label">Message</label>
+                <div class="col-sm-9">
+                <textarea type="textarea" class="form-control text-light" id="saveDesc" 
+                          placeholder="Your message" rows="2" value=""></textarea>
+                </div>
+            </div>
+          
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-light rounded-0" 
+              onclick='send()'; data-dismiss="modal">SEND</button>
+            <button type="button" class="btn btn-outline-light rounded-0 text-danger" data-dismiss="modal">CANCEL</button>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <div class="container-fluid h-100 px-0 py-0">
+      <div class="row no-gutters px-0 h-100">
+
+        <!-- Background image and title for left-hand side of page  -->
+        <div class="col-lg-8 col-xs-12 px-0 py-0 h-100 d-flex">
+          <div class="container-fluid h-100 px-0 py-0" id="connectImg">
+
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light pt-0">
+              <a class="navbar-brand mt-n1" href="#">yoga</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-item nav-link" href="index.html">welcome</a>
+                  <a class="nav-item nav-link" href="main.html">intro</a>
+                  <a class="nav-item nav-link active" href="#">connect</a>
+                  <a class="nav-item nav-link" href="saved.html">saved items</a>
+                </div>
+              </div>
+            </nav>
+
+          </div>
+        </div>
+
+        <!-- Right-hand side of page with content -->
+        <div class="col-lg-4 col-xs-12 px-0 py-0 d-flex flex-column h-100">
+          <div class="container-fluid px-5 d-flex flex-column align-items-center mb-auto">
+
+            <!-- Block quote -->
+            <blockquote class="blockquote text-center mt-4">
+              <h2 class="mb-0 font-italic">When I joined the yoga community, it changed my life.</h2>
+              <footer class="blockquote-footer" id="quotefooter">John</footer>
+            </blockquote>
+            
+            <!-- Subscribe section -->
+            <h3 class="text-center mb-4 mt-4">Subscribe to our newsletter</h3>
+            
+            <!-- Form to input email -->
+            <div class="form-group w-100">
+              <input type="text" class="form-control form-control-lg text-light border border-light" placeholder="Email">
+            </div>
+            
+            <!-- Radio form section -->
+            <h5 class="text-center mt-2">Which style of yoga would you most like to learn more about?</h5>
+
+            <div class="row justify-content-center">
+              <div class="col-auto">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio">Vinyasa Yoga
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio">Bikram Yoga
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio">Yin Yoga
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio">Kundalini Yoga
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Subscribe and Contact us buttons -->
+            <a href="#" class="btn btn-outline-light btn-lg mt-4 mb-3 rounded-0 font-weight-bold">SUBSCRIBE</a>
+            <a href="#" class="btn btn-outline-light text-success btn-lg mt-3 
+                                mb-4 rounded-0 font-weight-bold"
+              data-toggle="modal" data-target="#contactModal">CONTACT US</a>
+          </div>
+
+          <!-- Footer with links to Twitter and Facebook -->
+          <div class="container-fluid mt-auto mb-0 mx-0 py-0 d-flex justify-content-around" id="connectfooter">
+                <a href="https://twitter.com/" class="my-4 text-secondary" target="_blank">
+                  <h5 class="my-0 font-weight-bold"><i class="fab fa-twitter"></i> &nbsp; Twitter</h5>
+                </a>
+                <a href="https://www.facebook.com/" class="my-4 text-secondary" target="_blank">
+                  <h5 class="my-0 font-weight-bold"><i class="fab fa-facebook-f"></i> &nbsp; Facebook</h5>
+                </a>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script with function to alert user when Contact US form is submitted -->
+    <script>
+      function send() {
+        alert("Thank you. Your message has been sent.");
+      }
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="scss/fonts.css">
+
+    <!-- (Customized) Bootstrap CSS -->
+    <link rel="stylesheet" href="scss/main.css">
+  
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+      crossorigin="anonymous">
+
+    <!-- Title -->
+    <title>Yoga - introduction</title>
+  </head>
+
+  <body>
+
+    <!-- Modal with form to save item -->
+    <div class="modal" id="saveModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content border border-light">
+          <div class="modal-header">
+            <h5 class="modal-title">Save item</h5>
+            <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="saveForm">
+            
+            <div class="form-group row">
+                <label for="saveTitle" class="col-sm-3 col-form-label">Title</label>
+                <div class="col-sm-9">
+                <input type="text" class="form-control text-light" id="saveTitle" value="">
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <label for="saveAuth" class="col-sm-3 col-form-label">Description</label>
+                <div class="col-sm-9">
+                <textarea type="textarea" class="form-control text-light" id="saveDesc" 
+                          placeholder="Enter a short description" rows="2" value=""></textarea>
+                </div>
+            </div>
+          
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-light rounded-0" id="saveBtn" data-dismiss="modal">SAVE ITEM</button>
+            <button type="button" class="btn btn-outline-light rounded-0 text-danger" data-dismiss="modal">CANCEL</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-0" id="firstCont">
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark pt-0 pl-0">
+        <a class="navbar-brand mt-n1 ml-0" href="#">yoga</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">welcome <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="#">intro</a>
+            <a class="nav-item nav-link" href="connect.html">connect</a>
+            <a class="nav-item nav-link" href="saved.html">saved items</a>
+          </div>
+        </div>
+      </nav>
+
+        <!-- Page heading section with introduction and lotus picture -->
+        <div class="container d-flex flex-column h-100">
+          <div class="row h-100">
+            <div class="col-5 offset-md-1 d-flex flex-column justify-content-center align-items-center h-100">
+              <h1 class="display-1 mt-n2 font-weight-bold font-italic text-center" id="introHead">introduction</h1>
+              <p class="lead text-center mb-6">Yoga is a group of physical, mental, and spiritual 
+                practices which originated in ancient India.</p>
+              <div style="height: 5rem;"></div>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+
+    <!-- Section 2: origins of yoga -->
+    <div class="container" id="section2">
+
+      <div class="row h-100 align-items-center">
+        <!-- Origins info -->
+        <div class="col-lg-4 col-xs-12">
+            <button class="btn py-0 px-0 like mr-2" data-toggle="tooltip" title="Like">
+              <i class="far fa-heart fa-lg"></i>
+              <i class="fas fa-heart fa-lg"></i>
+            </button>
+            <button class="btn py-0 px-0 tack" id="saveOriginsContent"
+                    data-toggle="tooltip" title="Save for later">
+              <i class="fas fa-thumbtack fa-lg"></i>
+            </button>
+
+            <div id="OriginsContent">
+              <h4 class="display-4 font-weight-bold font-italic mt-4">origins of yoga</h4>
+              <p>
+                The practice of yoga has been thought to date back to pre-vedic Indian 
+                traditions; possibly in the Indus valley civilization around 3000 BCE. 
+                Yoga most likely developed as a systematic study around the 5th and 6th 
+                centuries BCE, in ancient India's ascetic and Sramana movements. The Yoga 
+                Sutras of Patanjali date from the 2nd century BCE, and gained prominence in 
+                the west in the 20th century after being first introduced by Swami Vivekananda.
+              </p>
+            </div>
+            <button class="btn btn-outline-light rounded-0" type="button" data-toggle="collapse" data-target="#collapse1">
+              LEARN MORE
+            </button>
+        </div>
+
+        <!-- Image and 8 limbs of yoga -->
+        <div class="col-lg-8 col-xs-12 d-flex flex-column justify-content-center fullheight" id="originsCol">
+          <div class="container px-0 py-0 my-6" id="OriginsPic">
+            <button class="btn py-0 px-0 like mr-2" data-toggle="tooltip" title="Like">
+              <i class="far fa-heart fa-lg"></i>
+              <i class="fas fa-heart fa-lg"></i>
+            </button>
+              <button class="btn py-0 px-0 tack" id="saveOriginsPic"
+                 data-toggle="tooltip" title="Save for later">
+                <i class="fas fa-thumbtack fa-lg"></i>
+              </button>
+            <div class="collapse" id="collapse1">
+              <div class="container-fluid d-flex block-bg">
+                  <button class="btn py-0 px-0 like mr-2" data-toggle="tooltip" title="Like">
+                    <i class="far fa-heart fa-lg"></i>
+                    <i class="fas fa-heart fa-lg"></i>
+                  </button>
+                  <button class="btn py-0 px-0 tack" id="saveLimbs"
+                      data-toggle="tooltip" title="Save for later">
+                    <i class="fas fa-thumbtack fa-lg"></i>
+                  </button>
+                <div class="container ml-2 w-50 d-flex flex-column justify-content-center"
+                      id="Limbs">
+                  <p>The eight limbs of classical yoga:</p>
+                  <ol>
+                    <li><strong>yama</strong> (abstinences)</li>
+                    <li><strong>niyama</strong> (observances)</li>
+                    <li><strong>asana</strong> (yoga postures)</li>
+                    <li><strong>pranayama</strong> (breath control)</li>
+                    <li><strong>pratyahara</strong> (withdrawal of the senses)</li>
+                    <li><strong>dharana</strong> (concentration)</li>
+                    <li><strong>dhyana</strong> (meditation)</li>
+                    <li><strong>samadhi</strong> (absorption)</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+      <!-- Section 3 - yoga as exercise -->
+    
+      <div class="row h-100 align-items-center">
+        
+        <!-- Image and table with modern yoga styles -->
+        <div class="col-lg-8 col-xs-12 order-lg-1 order-sm-2 d-flex flex-column justify-content-center fullheight" id="originsCol">
+          <div class="container px-0 py-0 my-6" id="ExercisePic">
+            <button class="btn py-0 px-0 like mr-2 text-dark" data-toggle="tooltip" title="Like">
+              <i class="far fa-heart fa-lg"></i>
+              <i class="fas fa-heart fa-lg"></i>
+            </button>
+            <button class="btn py-0 px-0 text-dark tack" id="saveExercisePic"
+                    data-toggle="tooltip" title="Save for later">
+              <i class="fas fa-thumbtack fa-lg"></i>
+            </button>
+            <div class="collapse" id="collapse2">
+              <div class="container d-flex flex-column justify-content-center block-bg">
+                <button class="btn py-0 px-0 like mr-2" data-toggle="tooltip" title="Like">
+                  <i class="far fa-heart fa-lg"></i>
+                  <i class="fas fa-heart fa-lg"></i>
+                </button>
+                <button class="btn py-0 px-0 tack" id="saveStyles"
+                    data-toggle="tooltip" title="Save for later">
+                  <i class="fas fa-thumbtack fa-lg"></i>
+                </button>
+                <div id="Styles">
+                  <h5 class="font-weight-bold mb-4 ml-2">Popular styles of modern yoga as exercise</h5>
+                  <table class="table table-borderless">
+                    <tbody>
+                      <tr class="border-bottom">
+                        <td style="min-width: 8rem;"><em>Ashtanga Vinyasa Yoga</em></td>
+                        <td>
+                          The style is energetic, synchronising breath with movements. 
+                          The individual poses (asanas) are linked by flowing movements (vinyasas).
+                        </td>
+                      </tr>
+                      <tr class="border-bottom">
+                        <td><em>Bikram Yoga</em></td>
+                        <td>
+                          Classes consist of a fixed sequence of 26 postures, practised in a room heated 
+                          to 41 °C, with a humidity of 40%, to replicate the climate of India.</td>
+                      </tr>
+                      <tr class="border-bottom">
+                        <td><em>Yin Yoga</em></td>
+                        <td>
+                          A slow-paced style of yoga incorporating principles of traditional 
+                          Chinese medicine, 
+                          with asanas (postures) that are held for longer periods of time 
+                        </td>
+                      </tr>
+                      <tr class="border-bottom">
+                        <td><em>Kundalini Yoga</em></td>
+                        <td>
+                          The majority of the physical postures focus on navel activity, 
+                          activity of the spine, and selective pressurization of body 
+                          points and meridians.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Yoga as exercise info -->
+        <div class="col-lg-4 col-xs-12 order-sm-1 h-100">
+          <button class="btn py-0 px-0 like mr-2" data-toggle="tooltip" title="Like">
+            <i class="far fa-heart fa-lg"></i>
+            <i class="fas fa-heart fa-lg"></i>
+          </button>
+          <button class="btn py-0 px-0 tack" id="saveExerciseContent"
+                    data-toggle="tooltip" title="Save for later">
+            <i class="fas fa-thumbtack fa-lg"></i>
+          </button>
+          <div id="ExerciseContent">
+            <h4 class="display-4 font-weight-bold font-italic mt-4">yoga as exercise</h4>
+            <p>
+              Outside India, yoga has developed into a posture-based physical fitness, 
+              stress-relief and relaxation technique. Yoga as exercise is a physical 
+              activity consisting mainly of postures, often connected by flowing 
+              sequences, sometimes accompanied by breathing exercises, and frequently 
+              ending with relaxation, lying down or meditation. Yoga in this form has 
+              become familiar across the world.
+            </p>
+          </div>
+          <button class="btn btn-outline-light rounded-0" type="button" data-toggle="collapse" data-target="#collapse2">
+            LEARN MORE
+          </button>
+        </div>
+      </div>
+
+    </div>
+ 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Page specific JavaScript -->
+    <script src="js/main.js"></script>
+
+  </body>
+
+</html>

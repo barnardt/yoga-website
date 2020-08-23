@@ -1,0 +1,119 @@
+// ***CUSTOMISATIONS TO BOOTSTRAP VARIABLES***
+
+//Spacing
+$spacer: 1rem !default;
+$spacers: () !default;
+
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 5) //This is added
+  ),
+  $spacers
+);
+
+// Font family and size
+$font-family-sans-serif: d-din, Arial, sans-serif;
+$font-size-base: 1.1rem;
+$btn-font-weight: 700;
+
+//Body background and text default colors
+$body-bg:                   black;
+$body-color:                #f8f9fa;
+$input-bg:                  black;
+
+// Remove button focus border
+$btn-focus-width: 0;
+$input-btn-focus-width:  0;
+$input-focus-border-color: #f8f9fa;
+
+// ***IMPORT BOOTSTRAP SCSS***
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+// ***EXTERNAL CSS***
+ol {
+    padding-left: 1em;
+}
+
+.col-lg-4 {
+    position: relative;
+}
+
+.block-bg {
+    background-color: rgba(0,0,0,0.7);
+    min-height: 80vh;
+}
+
+.tack {
+    position: absolute;
+    right: 0.75rem;
+    top: 0.75rem;
+    z-index: 10;
+}
+
+.like {
+    position: absolute;
+    top: 0.75rem;
+    right: 2rem;
+    z-index: 10;
+}
+
+.content-wrapper {
+    min-height: 80vh;
+}
+
+.modal-content {
+    background-color: black;
+}
+
+.navbar {
+    background-color: rgba(0,0,0,0);
+}
+
+.nav-item {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 150%;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 250%;
+}
+
+.fas.fa-heart {
+    display: none;
+}
+
+#section1 {
+    height: 100vh;
+}
+
+#firstCont {
+    height: 100vh;
+    background: url(../img/intro.jpg);
+    background-repeat: no-repeat;
+    background-position: 75% 100%;
+    background-size: auto 100%;
+}
+
+#OriginsPic {
+    background: url(../img/origins.jpg) no-repeat center center/cover;
+    min-height: 80vh;
+    font-size: 130%;
+    position: relative;
+}
+
+#ExercisePic {
+    background: url(../img/yoga-as-exercise.jpg) no-repeat center center/cover;
+    min-height: 80vh;
+    position: relative;
+}
+
