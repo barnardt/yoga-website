@@ -10842,16 +10842,21 @@ html, body {
   background-color: black;
 }
 
-#quotefooter {
-  font-size: 125%;
-}
-
 #connectImg {
-  background: url(../img/connect.jfif) no-repeat center center/cover;
+  background: url(../img/connect.jpg) no-repeat center center/cover;
   min-height: 100vh;
 }
 
 #connectfooter {
   background-color: #343a40;
+}
+
+#quotefooter {
+  font-size: 125%;
+}
+
+#rightCol {
+  max-height: 100vh;
+  overflow: auto;
 }
 /*# sourceMappingURL=connect.css.map */

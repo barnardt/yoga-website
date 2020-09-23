@@ -20,7 +20,7 @@
     <title>Yoga - introduction</title>
   </head>
 
-  <body>
+  <body class="pb-3">
 
     <!-- Modal with form to save item -->
     <div class="modal" id="saveModal" tabindex="-1" role="dialog">
@@ -58,10 +58,10 @@
       </div>
     </div>
 
-    <div class="container-fluid py-0" id="firstCont">
+    <div class="container-fluid px-0 py-0" id="firstCont">
 
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark pt-0 pl-0">
+      <nav class="navbar navbar-expand-md navbar-dark pt-0 w-100">
         <a class="navbar-brand mt-n1 ml-0" href="#">yoga</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -76,25 +76,34 @@
         </div>
       </nav>
 
-        <!-- Page heading section with introduction and lotus picture -->
-        <div class="container d-flex flex-column h-100">
-          <div class="row h-100">
-            <div class="col-5 offset-md-1 d-flex flex-column justify-content-center align-items-center h-100">
-              <h1 class="display-1 mt-n2 font-weight-bold font-italic text-center" id="introHead">introduction</h1>
-              <p class="lead text-center mb-6">Yoga is a group of physical, mental, and spiritual 
+      <!-- Page heading section with introduction and lotus picture -->
+
+      <div class="container my-0 py-0" id="introCont"> 
+        <div class="row d-flex flex-lg-row flex-column no-gutters my-0 py-0">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-lg-center mr-n5 py-0">
+            <div class="d-flex flex-column align-items-center float-right" id="headTextWrap">
+              <div id="heightAdj"></div>
+              <h1 class="display-1 font-weight-bold font-italic text-center" id="introHead">introduction</h1>
+              <p class="lead text-center mb-0">Yoga is a group of physical, mental, and spiritual 
                 practices which originated in ancient India.</p>
-              <div style="height: 5rem;"></div>
             </div>
           </div>
+
+          <div class="col-lg-6 d-flex flex-column align-self-center align-items-center mx-n5 my-0 px-0 py-0">
+            <div class="" id="introImgWrapper"></div>
+          </div>
+
         </div>
 
+      </div>
 
     </div>
 
     <!-- Section 2: origins of yoga -->
     <div class="container" id="section2">
 
-      <div class="row h-100 align-items-center">
+      <div class="row h-100 align-items-center pt-4">
         <!-- Origins info -->
         <div class="col-lg-4 col-xs-12">
             <button class="btn py-0 px-0 like mr-2" data-toggle="tooltip" title="Like">
@@ -117,14 +126,14 @@
                 the west in the 20th century after being first introduced by Swami Vivekananda.
               </p>
             </div>
-            <button class="btn btn-outline-light rounded-0" type="button" data-toggle="collapse" data-target="#collapse1">
+            <button id="originsLearnMoreBtn" class="btn btn-outline-light rounded-0" type="button" data-toggle="collapse" data-target="#collapse1">
               LEARN MORE
             </button>
         </div>
 
         <!-- Image and 8 limbs of yoga -->
-        <div class="col-lg-8 col-xs-12 d-flex flex-column justify-content-center fullheight" id="originsCol">
-          <div class="container px-0 py-0 my-6" id="OriginsPic">
+        <div class="col-lg-8 col-xs-12 d-flex flex-column justify-content-center fullheight px-md-3 px-0" id="originsCol">
+          <div class="container px-0 py-0 pic-resp-margins" id="OriginsPic">
             <button class="btn py-0 px-0 like mr-2" data-toggle="tooltip" title="Like">
               <i class="far fa-heart fa-lg"></i>
               <i class="fas fa-heart fa-lg"></i>
@@ -134,7 +143,7 @@
                 <i class="fas fa-thumbtack fa-lg"></i>
               </button>
             <div class="collapse" id="collapse1">
-              <div class="container-fluid d-flex block-bg">
+              <div class="container-fluid d-flex block-bg pl-0">
                   <button class="btn py-0 px-0 like mr-2" data-toggle="tooltip" title="Like">
                     <i class="far fa-heart fa-lg"></i>
                     <i class="fas fa-heart fa-lg"></i>
@@ -143,9 +152,9 @@
                       data-toggle="tooltip" title="Save for later">
                     <i class="fas fa-thumbtack fa-lg"></i>
                   </button>
-                <div class="container ml-2 w-50 d-flex flex-column justify-content-center"
+                <div class="container py-5 d-flex flex-column justify-content-center"
                       id="Limbs">
-                  <p>The eight limbs of classical yoga:</p>
+                  <p >The eight limbs of classical yoga:</p>
                   <ol>
                     <li><strong>yama</strong> (abstinences)</li>
                     <li><strong>niyama</strong> (observances)</li>
@@ -169,8 +178,8 @@
       <div class="row h-100 align-items-center">
         
         <!-- Image and table with modern yoga styles -->
-        <div class="col-lg-8 col-xs-12 order-lg-1 order-sm-2 d-flex flex-column justify-content-center fullheight" id="originsCol">
-          <div class="container px-0 py-0 my-6" id="ExercisePic">
+        <div class="col-lg-8 col-xs-12 order-2 order-lg-1 d-flex flex-column justify-content-center fullheight px-md-3 px-0" id="exerciseCol">
+          <div class="container px-0 py-0 pic-resp-margins" id="ExercisePic">
             <button class="btn py-0 px-0 like mr-2 text-dark" data-toggle="tooltip" title="Like">
               <i class="far fa-heart fa-lg"></i>
               <i class="fas fa-heart fa-lg"></i>
@@ -189,7 +198,7 @@
                     data-toggle="tooltip" title="Save for later">
                   <i class="fas fa-thumbtack fa-lg"></i>
                 </button>
-                <div id="Styles">
+                <div class="py-5" id="Styles">
                   <h5 class="font-weight-bold mb-4 ml-2">Popular styles of modern yoga as exercise</h5>
                   <table class="table table-borderless">
                     <tbody>
@@ -231,7 +240,7 @@
         </div>
 
         <!-- Yoga as exercise info -->
-        <div class="col-lg-4 col-xs-12 order-sm-1 h-100">
+        <div class="col-lg-4 col-xs-12 order-1 order-lg-2 h-100">
           <button class="btn py-0 px-0 like mr-2" data-toggle="tooltip" title="Like">
             <i class="far fa-heart fa-lg"></i>
             <i class="fas fa-heart fa-lg"></i>
@@ -251,7 +260,7 @@
               become familiar across the world.
             </p>
           </div>
-          <button class="btn btn-outline-light rounded-0" type="button" data-toggle="collapse" data-target="#collapse2">
+          <button id="exerciseLearnMoreBtn" class="btn btn-outline-light rounded-0" type="button" data-toggle="collapse" data-target="#collapse2">
             LEARN MORE
           </button>
         </div>

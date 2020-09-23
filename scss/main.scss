@@ -36,6 +36,7 @@ $input-focus-border-color: #f8f9fa;
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 
+
 // ***EXTERNAL CSS***
 ol {
     padding-left: 1em;
@@ -57,6 +58,11 @@ ol {
     z-index: 10;
 }
 
+.lead {
+    font-size: 1.25rem;
+    max-width: 27rem;
+}
+
 .like {
     position: absolute;
     top: 0.75rem;
@@ -73,7 +79,9 @@ ol {
 }
 
 .navbar {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,1);
+    position: absolute;
+    z-index: 5;
 }
 
 .nav-item {
@@ -92,17 +100,42 @@ ol {
     display: none;
 }
 
-#section1 {
-    height: 100vh;
+.pic-resp-margins {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 #firstCont {
+    position: relative;
     height: 100vh;
-    background: url(../img/intro.jpg);
-    background-repeat: no-repeat;
-    background-position: 75% 100%;
-    background-size: auto 100%;
+    // background: url(../img/intro.jpg);
+    // background-repeat: no-repeat;
+    // background-position: 75% 100%;
+    // background-size: auto 100%;
 }
+
+#heightAdj {
+    height: 3.5rem;
+}
+
+#introHead {
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+
+#introImgWrapper {
+    position: relative;
+    background: url(../img/intro.jpg) no-repeat center center/cover;
+    z-index: -10;
+    // height: 100vh;
+    // width: 84.6vh;
+}
+
+#Limbs {
+    width: 50%;
+    margin-left: 1.5rem;
+}
+
 
 #OriginsPic {
     background: url(../img/origins.jpg) no-repeat center center/cover;
@@ -117,3 +150,53 @@ ol {
     position: relative;
 }
 
+@media only screen and (max-width: 1199.98px) and (min-width: 992px) {
+    #introCont {
+        max-width: 95%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #introCont {
+        max-width: 85%;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .lead {
+        font-size: 1.5rem;
+        max-width: 30rem;
+    }
+    
+    .navbar {
+        background-color: rgba(0,0,0,0);
+    }
+
+    #introImgWrapper {
+        height: 100vh;
+        width: 84.6vh;
+    }
+
+    #introHead {
+        font-size: 6rem;
+    }
+
+    .pic-resp-margins {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    #Limbs {
+        width: 100%;
+        font-size: 1.3rem;
+        margin-left: 0.25rem;
+    }
+
+    #Styles {
+        font-size: 1rem;
+    }
+}
