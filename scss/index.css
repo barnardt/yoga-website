@@ -10822,6 +10822,10 @@ html, body {
   height: 100%;
 }
 
+.photo-credit {
+  font-size: 0.8rem;
+}
+
 #mainBG {
   background: url(../img/mainBG.jpg) no-repeat center center/cover;
 }
