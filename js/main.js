@@ -68,7 +68,6 @@ function resizeLotus() {
         headTextWrapHeight = parseInt(headTextWrapHeight);
 
         let newHeight = (firstContHeight - headTextWrapHeight);
-
         
         lotus.style.height = newHeight.toString() + "px";
         lotus.style.width = (newHeight*0.8465).toString() + "px";
@@ -101,8 +100,8 @@ function addLink(elementID, link) {
 $(document).ready(function(){
 
     // Add internal links to page sections if content is displayed vertically on page load
-    addLink("originsLearnMoreBtn", "#originsCol");
-    addLink("exerciseLearnMoreBtn", "#exerciseCol");
+    // addLink("originsLearnMoreBtn", "#originsCol");
+    // addLink("exerciseLearnMoreBtn", "#exerciseCol");
 
 
     // Display the main picture correctly sized on page load
@@ -142,5 +141,5 @@ if (localStorage.getItem("items") === null) {
 
 // Add event listeners to body element when page is resized
 window.addEventListener("resize", function(){resizeLotus()});
-window.addEventListener("resize", function(){addLink("originsLearnMoreBtn", "#originsCol")});
-window.addEventListener("resize", function(){addLink("exerciseLearnMoreBtn", "#exerciseCol")});
+// window.addEventListener("resize", function(){addLink("originsLearnMoreBtn", "#originsCol")});
+// window.addEventListener("resize", function(){addLink("exerciseLearnMoreBtn", "#exerciseCol")});

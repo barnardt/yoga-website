@@ -11206,13 +11206,14 @@ ol {
 }
 
 #introHead {
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin-top: 1rem;
 }
 
 #introImgWrapper {
   position: relative;
   background: url(../img/intro.jpg) no-repeat center center/cover;
+  max-width: 100%;
 }
 
 #Limbs {
