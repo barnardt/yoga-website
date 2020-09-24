@@ -10822,6 +10822,14 @@ html, body {
   height: 100%;
 }
 
+#chevron {
+  color: black;
+  position: absolute;
+  bottom: 4rem;
+  width: 100%;
+  text-align: center;
+}
+
 .navbar {
   background-color: rgba(0, 0, 0, 0);
 }
@@ -10843,12 +10851,17 @@ html, body {
 }
 
 #connectImg {
+  position: relative;
   background: url(../img/connect.jpg) no-repeat center center/cover;
   min-height: 100vh;
 }
 
 #connectfooter {
   background-color: #343a40;
+}
+
+#page-title {
+  color: black;
 }
 
 #quotefooter {
@@ -10858,5 +10871,11 @@ html, body {
 #rightCol {
   max-height: 100vh;
   overflow: auto;
+}
+
+@media only screen and (min-width: 992px) {
+  #page-title, #chevron {
+    display: none;
+  }
 }
 /*# sourceMappingURL=connect.css.map */

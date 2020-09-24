@@ -65,6 +65,13 @@ ol {
   font-size: 250%;
 }
 
+#chevron {
+  position: absolute;
+  bottom: 4rem;
+  width: 100%;
+  text-align: center;
+}
+
 #OriginsPic {
   background: url(../img/origins.jpg) no-repeat center center/cover;
   min-height: 80vh;
@@ -76,6 +83,7 @@ ol {
 }
 
 #savedImg {
+  position: relative;
   background: url(../img/saved1.jpg) no-repeat center center/cover;
   min-height: 100vh;
 }
@@ -86,5 +94,12 @@ ol {
 }
 
 #noItems {
-  margin-top: 15rem;
+  position: absolute;
+  bottom: 50%;
+}
+
+@media only screen and (min-width: 992px) {
+  #page-title, #chevron {
+      display: none;
+  }
 }

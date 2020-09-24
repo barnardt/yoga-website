@@ -65,10 +65,8 @@ function refreshCards() {
             <h5 class="card-title font-weight-bold mr-3">${item.title}</h5>
             <p class="card-text mr-3">${item.desc}</p>
             <div class="d-flex justify-content-between mt-auto">
-                <a href="#saveDisplay">
-                    <button class="btn rounded-0 btn-outline-light text-uppercase mb-3 mr-1"
-                            onclick="viewItem('${item.id}')">View item</button>
-                </a>
+                <button class="btn rounded-0 btn-outline-light text-uppercase mb-3 mr-1"
+                        onclick="viewItem('${item.id}')">View item</button>
                 <button class="btn text-danger mr-1 mb-1 px-0 py-0 align-self-end" 
                         onclick="deleteItem('${item.id}')">
                     <i class="fas fa-trash-alt fa-lg"></i>
@@ -133,7 +131,40 @@ function refreshNotes() {
     });
 }
 
+// Function to hide chevron
+
+
 // *JQUERY*
+// Function to animate chevron up and down
+$(function() {
+    function chevronUpDown() {
+        $("#chevron").stop(true);
+        if ($("#chevron").css("display") != "none") {
+            $("#chevron").animate({bottom: "2rem"}, 1000, function(){
+                $("#chevron").fadeOut(1000, function(){
+                    $("#chevron").animate({bottom: "4rem"}, 1, function(){
+                        $("#chevron").fadeIn(1000, function(){
+                            chevronUpDown();
+                        });
+                    });
+                });
+            });
+        }
+    }
+
+    function chevronHide() {
+        $("#chevron").stop().css("display", "none");
+    }
+
+    chevronUpDown()
+
+    // Hide chevron after user scrolls down
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 150) {
+            chevronHide()
+        }
+    });
+});
 
 // Function to animate display of selected saved item (fade in over 1 second)
 function fadeInDisplay() {
