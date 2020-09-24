@@ -11185,9 +11185,20 @@ ol {
   margin-bottom: 1.5rem;
 }
 
+#ExercisePic {
+  background: url(../img/yoga-as-exercise.jpg) no-repeat center center/cover;
+  min-height: 80vh;
+  position: relative;
+}
+
 #firstCont {
   position: relative;
   height: 100vh;
+}
+
+#headTextWrap {
+  position: relative;
+  z-index: 2;
 }
 
 #heightAdj {
@@ -11202,7 +11213,6 @@ ol {
 #introImgWrapper {
   position: relative;
   background: url(../img/intro.jpg) no-repeat center center/cover;
-  z-index: -10;
 }
 
 #Limbs {
@@ -11217,10 +11227,11 @@ ol {
   position: relative;
 }
 
-#ExercisePic {
-  background: url(../img/yoga-as-exercise.jpg) no-repeat center center/cover;
-  min-height: 80vh;
-  position: relative;
+.photo-credit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 0.8rem;
 }
 
 @media only screen and (max-width: 1199.98px) and (min-width: 992px) {
