@@ -42,17 +42,17 @@
             </div>
             
             <div class="form-group row">
-                <label for="saveAuth" class="col-sm-3 col-form-label">Message</label>
+                <label for="saveDesc" class="col-sm-3 col-form-label">Message</label>
                 <div class="col-sm-9">
-                <textarea type="textarea" class="form-control text-light" id="saveDesc" 
-                          placeholder="Your message" rows="2" value=""></textarea>
+                <textarea class="form-control text-light" id="saveDesc" 
+                          placeholder="Your message" rows="2"></textarea>
                 </div>
             </div>
           
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-outline-light rounded-0" 
-              onclick='send()'; data-dismiss="modal">SEND</button>
+              onclick='send()' data-dismiss="modal">SEND</button>
             <button type="button" class="btn btn-outline-light rounded-0 text-danger" data-dismiss="modal">CANCEL</button>
           </div>
         </div>
@@ -63,7 +63,7 @@
       <div class="row no-gutters px-0 h-100">
 
         <!-- Background image and title for left-hand side of page  -->
-        <div class="col-lg-8 col-xs-12 px-0 py-0 h-100 d-flex">
+        <div class="col-lg-8 col-xs-12 px-0 py-0 h-100 d-flex flex-column">
           <div class="container-fluid h-100 px-0 py-0 d-flex flex-column" id="connectImg">
 
             <!-- Navbar -->
@@ -91,8 +91,8 @@
         </div>
 
         <!-- Right-hand side of page with content -->
-        <div class="col-lg-4 col-xs-12 px-0 py-0 d-flex flex-column h-100" id="rightCol">
-          <div id="rightCont" class="container-fluid px-xl-5 px-lg-3 px-5 d-flex flex-column align-items-center mb-auto">
+        <div class="col-lg-4 col-xs-12 px-0 py-0 d-flex flex-column" id="rightCol">
+          <div id="rightCont" class="container-fluid px-xl-5 px-lg-3 px-5 d-flex flex-column align-items-center mt-1 mb-auto">
             <!-- Block quote -->
             <blockquote class="blockquote text-center mt-4">
               <h2 class="mb-0 font-italic">The yoga community changed my life.</h2>

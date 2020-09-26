@@ -10883,6 +10883,10 @@ html, body {
   overflow: auto;
 }
 
+#rightCont {
+  overflow: auto;
+}
+
 @media only screen and (min-width: 992px) {
   #page-title, #chevron {
     display: none;
