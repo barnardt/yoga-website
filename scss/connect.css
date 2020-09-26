@@ -10868,6 +10868,10 @@ html, body {
   background-color: #343a40;
 }
 
+#leftCol {
+  min-height: 100vh;
+}
+
 #page-title {
   color: black;
 }

@@ -74,6 +74,10 @@ html, body {
     background-color: $dark;
 }
 
+#leftCol {
+    min-height: 100vh;
+}
+
 #page-title {
     color: black;
 }
