@@ -10860,13 +10860,16 @@ html, body {
 
 #connectImg {
   position: relative;
-  z-index: 1;
   background: url(../img/connect.jpg) no-repeat center center/cover;
   min-height: 100vh;
 }
 
 #connectfooter {
   background-color: #343a40;
+}
+
+#leftCol {
+  min-height: 100vh;
 }
 
 #page-title {
