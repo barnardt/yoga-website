@@ -10850,14 +10850,6 @@ html, body {
   background-color: black;
 }
 
-.photo-credit {
-  position: absolute;
-  z-index: 10;
-  font-size: 0.8rem;
-  bottom: 0;
-  right: 0;
-}
-
 #connectImg {
   position: relative;
   background: url(../img/connect.jpg) no-repeat center center/cover;
@@ -10877,7 +10869,6 @@ html, body {
 }
 
 #rightCol {
-  position: relative;
   min-height: 100vh;
   height: 100vh;
   overflow: auto;
